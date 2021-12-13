@@ -1,0 +1,27 @@
+import os
+os.system("clear")
+import sys,pyfiglet,webbrowser,socket,time
+from time import sleep as timeout
+def termux () :
+    os.system ('clear')
+    print ("  \033[1;31m __________ \033[1;36m _____ \033[1;35m ______     \033[1;34m ___    ___ \033[1;33m __    __  \033[1;32m__     ___     ")
+    timeout(0.1)
+    print ("  \033[1;31m|___|“|___| \033[1;36m|:|___|\033[1;35m |;|__\.\   \033[1;34m |”|\  /|”| \033[1;33m |‘|   |’| \033[1;32m|:|    |;|     ")
+    timeout(0.1)
+    print ("  \033[1;31m    |:|     \033[1;36m|:|    \033[1;35m |;|  /./   \033[1;34m |”|\\\//|“|\033[1;33m  |‘|   |’|\033[1;32m  \\'\  /;/      ")
+    timeout(0.1)
+    print ("  \033[1;31m    |:|     \033[1;36m|:|___ \033[1;35m |;|__\.\   \033[1;34m |”| \/ |“| \033[1;33m |‘|   |’| \033[1;32m  \\'\/’/       ")
+    timeout(0.1)
+    print ("  \033[1;31m    |:|     \033[1;36m|:|——— \033[1;35m |;|   \.\  \033[1;34m |”|    |“| \033[1;33m |’|   |’| \033[1;32m  |;/\;| \033[1;31mTOOLS ")
+    timeout(0.1)
+    print ("  \033[1;31m    |:|     \033[1;36m|:|___ \033[1;35m |;|   |.| \033[1;34m  |”|    |“| \033[1;33m |_|___|_| \033[1;32m /;/  \;\      ")
+    timeout(0.1)
+    print ("  \033[1;31m    |_|     \033[1;36m|_|___|\033[1;35m |_|   |_|\033[1;34m   |_|    |_| \033[1;33m |_|___|_|\033[1;32m /_/    \_\     ")
+    timeout(0.1)
+os.system("pkg update && pkg upgrade -y")
+os.system("mv config.example.py config.py")
+os.system("python -m pip install -r requirements.txt")
+os.system("clear")
+termux()
+i=input("Enter Nammper to start (. ❛ ᴗ ❛.):")
+os.system("python phoneinfoga.py -n +20{i}")
